@@ -1,0 +1,43 @@
+.content {
+	margin: 30px auto;
+}
+
+thead {
+	background-color: #73D8DB;
+}
+
+.mdl-data-table  td, .mdl-data-table th{
+	text-align: center;
+}
+
+.pagination-button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 34px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #434a54;
+  border-radius: 3px;
+
+}
+
+.pagination {
+	margin: 0 auto;
+}
+
+.c-button:hover {
+  border-color: #434a54;
+  background-color: #EEE;
+  color: #000;
+}
+
+.c-button-group .active {
+  background-color: #73D8DB;
+}

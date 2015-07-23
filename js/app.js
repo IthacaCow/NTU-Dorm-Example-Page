@@ -1,17 +1,17 @@
-var signUpSheetApp = angular.module('signUpSheetApp', ['ngRoute', 'signUpSheetControllers'] );
+angular.module('DNAApp', [
+  'ngRoute',
+  'DNAApp.table', 
+  ] 
 
-signUpSheetApp.config(['$routeProvider',
+).config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/all', {
-        templateUrl: 'partials/all.html',
-        controller: 'SheetAllController'
-      }).
-      when('/event/:eventId', {
-        templateUrl: 'partials/event.html',
-        controller: 'SheetEventController'
+      when('/users', {
+        templateUrl: './partials/table.html',
+        controller: 'tableController'
       }).
       otherwise({
-        redirectTo: '/all'
+        redirectTo: '/users'
       });
-  }]);
+  }]
+);

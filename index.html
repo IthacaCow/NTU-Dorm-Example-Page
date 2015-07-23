@@ -6,19 +6,27 @@
 		<meta charset="UTF-8">
 		<title>宿舍網路管理系統</title>
 
-		<link rel="stylesheet" href="./mdl/material.css">
-		<script src="./mdl/material.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="css/general.css">
 
+		  <!-- Angular Table -->
+		<link rel="stylesheet" href="lib/angular-material-table/style.css">
+
+		  <!-- Google Material Design Lite -->
+		<link rel="stylesheet" href="./bower_components/material-design-lite/material.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<link rel="stylesheet" href="css/general.css">
+		  <!-- button.css dependencies -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- User Table -->
+		<link rel="stylesheet" href="css/button.css">
+ 		<link rel="stylesheet" href="css/table.css">
 		
-		<script src="bower_components/angular/angular.js"></script>
-		<script src="bower_components/angular-route/angular-route.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/ng-controllers.js"></script>
+
 	</head>
 
-	<body ng-app="signUpSheetApp">
+	<body ng-app="DNAApp">
 
 		<!-- The drawer is always open in large screens. The header is always shown,
 		even in small screens. -->
@@ -89,29 +97,40 @@
 				</header>
 				
 				
-				<main class="mdl-layout__content" ng-view >
+				<main class="mdl-layout__content" mdl-grid ng-view >
 					
 				</main>
 
 				<footer class="mdl-mini-footer">
 
-					<div class="mdl-mini-footer--left-section">
+					<div class="mdl-mini-footer--right-section">
 
-						<div class="mdl-logo">
-							GIS Taiwan
-						</div>
+						<!-- <div class="mdl-logo">
+							First Men's Dorm Network Administration Site
+						</div> -->
 						<ul class="mdl-mini-footer--link-list">
 							<li><a href="#">About</a></li>
+							<li><a href="#">Support</a></li>
 						</ul>
 					</div>
 				</footer>
 
-
-				
 			</div>
 
 		</div>
 		
+
+
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+ 	    <script src="bower_components/angular-animate/angular-animate.js"></script>
+  		<script src="bower_components/angular-aria/angular-aria.js"></script>
+		<script src="bower_components/angular-utils-pagination/dirPagination.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/nav-controllers.js"></script>
+		<script src="js/table-controller.js"></script>
+		<script src="./mdl/material.min.js"></script>
+	
 	</body>
 
 </html> 

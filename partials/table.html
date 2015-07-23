@@ -1,0 +1,44 @@
+
+<div  class=''  >
+
+      <form class="mdl-grid">
+        <div class="mdl-textfield mdl-js-textfield textfield-demo">
+          <input class="mdl-textfield__input" type="text" placeholder="搜尋..."ng-model="query[search_field]"/>
+          <label class="mdl-textfield__label" for="search"></label>
+        </div>
+      </form>
+
+
+    <div class="page-content mdl-grid">
+      <table class="mdl-data-table mdl-js-data-table
+              mdl-shadow--2dp mdl-cell--12-col
+              mdl-cell--8-col-tablet
+              mdl-cell--4-col-phone
+              horizon_center" >
+          <thead>
+            <tr>
+              <th ng-repeat="field in field_name">{{field}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr dir-paginate="data in usersData | filter: query | itemsPerPage: 5 ">
+               <td ng-repeat="field in field_key ">
+                  {{data[field]}}
+               </td>
+            </tr>
+          </tbody>
+
+      </table>
+
+    </div>
+
+    <dir-pagination-controls
+              class="mdl-grid" 
+              boundary-links="true" 
+              on-page-change="pageChangeHandler(newPageNumber)" 
+              template-url="./bower_components/angular-utils-pagination/dirPagination.tpl.html">
+    </dir-pagination-controls>
+
+</div>
+
+
