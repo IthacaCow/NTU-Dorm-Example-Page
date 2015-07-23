@@ -7,7 +7,7 @@
     margin:10px;
 }
 
-nav header .title{
+.mdl-layout__drawer header .title{
     margin: 15px;
     text-align: center;
     color: white;
@@ -36,4 +36,6 @@ nav header .title{
      background-color: #691917 !important;
  }
 
- 
+ li{
+     list-style: none;
+ }
