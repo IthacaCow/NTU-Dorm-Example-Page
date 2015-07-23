@@ -36,6 +36,12 @@
      background-color: #691917 !important;
  }
 
+ .mdl-layout{
+     min-height: 100%;
+     height: auto !important;
+ }
+
+ 
  li{
      list-style: none;
  }
