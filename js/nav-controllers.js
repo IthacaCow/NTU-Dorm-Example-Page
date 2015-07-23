@@ -76,7 +76,7 @@ var model = {
     $scope.nav_menu = model.nav_menu;
     $scope.now_selected_nav_index = -1;
     $scope.select = function ( ind ){
-	if( model.now_selected_nav_index == ind ){
+	if( $scope.now_selected_nav_index == ind ){
 	    $scope.now_selected_nav_index = -1;
 	}else{
 	    $scope.now_selected_nav_index = ind;
