@@ -14,4 +14,10 @@ angular.module('DNAApp', [
         redirectTo: '/users'
       });
   }]
-);
+).run(function ($rootScope,$timeout) {
+        $rootScope.$on('$viewContentLoaded', () => {
+          $timeout(() => {
+            componentHandler.upgradeAllRegistered();
+          })
+        })
+      });

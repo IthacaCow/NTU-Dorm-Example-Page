@@ -35,10 +35,10 @@ thead {
 
 .c-button:hover {
   border-color: #434a54;
-  background-color: #EEE;
+  background-color: #BCF4F6;
   color: #000;
 }
 
-.c-button-group .active {
+ .c-button-group .active {
   background-color: #73D8DB;
 }
