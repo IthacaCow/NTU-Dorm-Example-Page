@@ -1,22 +1,22 @@
 
-<div  class='users-table'  >
+<div  class='users-table mdl-grid'  >
 
-      <form class="mdl-grid" style="margin-left:15px">
+      
+
+
+     
+
+    <div class="page-content mdl-cell mdl-cell--10-col horizon_center">
+      <form  style="margin-left:15px" >
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="text"  ng-model="query[search_field]" id="search-user"/>
           <label class="mdl-textfield__label" for="search-user">搜尋...</label>
         </div>
 
       </form>
-
-
-     
-
-    <div class="page-content">
       <table class="mdl-data-table mdl-js-data-table
               mdl-shadow--2dp 
-
-              horizon_center" >
+              " >
           <thead>
             <tr>
               <th ng-repeat="field in field_name">{{field}}</th>
@@ -31,15 +31,15 @@
           </tbody>
 
       </table>
-
-    </div>
-
-    <dir-pagination-controls
+      <dir-pagination-controls
               class="mdl-grid" 
               boundary-links="true" 
               on-page-change="pageChangeHandler(newPageNumber)" 
               template-url="./bower_components/angular-utils-pagination/dirPagination.tpl.html">
-    </dir-pagination-controls>
+     </dir-pagination-controls>
+    </div>
+
+    
 
 </div>
 
