@@ -5,7 +5,8 @@ angular.module('DNAApp', [
 
 ).config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider) {
-    $locationProvider.html5Mode(true);
+    // Disable HTML5 mode for now
+    // $locationProvider.html5Mode(true);
     $routeProvider.
       when('/', {
         templateUrl: './partials/main.html',
