@@ -4,12 +4,13 @@
 }
 
 thead {
-	background-color: #73D8DB;
+	background-color: #03A9F4;
 }
 
 .mdl-data-table  td, .mdl-data-table th{
 	text-align: center;
 }
+
 
 .pagination-button {
   font-family: "Open Sans", Arial, sans-serif;
@@ -35,10 +36,10 @@ thead {
 
 .c-button:hover {
   border-color: #434a54;
-  background-color: #BCF4F6;
+  background-color: #5FC3F0;
   color: #000;
 }
 
  .c-button-group .active {
-  background-color: #73D8DB;
+  background-color: #03A9F4;
 }

@@ -3,9 +3,14 @@ angular.module('DNAApp', [
   'DNAApp.table', 
   ] 
 
-).config(['$routeProvider',
-  function($routeProvider) {
+).config(['$routeProvider','$locationProvider',
+  function($routeProvider,$locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider.
+      when('/', {
+        templateUrl: './partials/main.html',
+        controller: 'mainController'  
+      }).
       when('/users', {
         templateUrl: './partials/table.html',
         controller: 'tableController'
@@ -21,3 +26,11 @@ angular.module('DNAApp', [
           })
         })
       });
+
+ angular.module('app', [])
+        .run(function ($rootScope) {
+            $rootScope.$on('$viewContentLoaded', ()=> {
+              $timeout(() => {
+                componentHandler.upgradeAllRegistered();
+              })
+            })});

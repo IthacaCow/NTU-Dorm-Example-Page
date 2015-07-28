@@ -1,0 +1,36 @@
+
+.os-icon {
+	color: black;
+	margin: 8px 14px;
+}
+.os-icon:hover{ 
+	position: relative; 
+	top: -5px;
+} 
+.bottom-menu {
+	
+	position: relative; 
+	bottom: 0px;
+	left:0px;
+	
+}
+
+.card {
+	margin: 5px;
+}
+
+#send-mail{
+	margin: 0px 25px;
+}
+
+.mdl-card__supporting-text{
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.big-word {
+	background-image: linear-gradient(to right, red 33%, rgba(255,255,255,0) 0%);
+	background-position: bottom;
+	background-size: 10px 2px;
+	background-repeat: repeat-x;
+}

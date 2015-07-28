@@ -7,11 +7,13 @@
     margin:10px;
 }
 
+
 .mdl-layout__drawer header .title{
     margin: 15px;
     text-align: center;
     color: white;
     font-size: 1.3em;
+    
 }
 
 
@@ -26,14 +28,20 @@
 
  .mdl-layout__header{
      background-color: #876339 !important;
+     color: white;
+ }
+
+#top-nav {
+    margin:25px;
  }
 
  .mdl-mini-footer{
      background-color: #6E5131 !important;
  }
- 
+
  .mdl-layout__drawer{
      background-color: #691917 !important;
+     overflow-y: unset;
  }
 
  .mdl-layout{
@@ -44,4 +52,15 @@
  
  li{
      list-style: none;
+ }
+
+ #title-parent {
+    color: black;
+    font-size: 18px;
+    vertical-align: middle;
+ }
+
+ #title-child {
+    color: white;
+    font-size: 23px;
  }
