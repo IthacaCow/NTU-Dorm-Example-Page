@@ -1,5 +1,12 @@
 #台灣大學宿舍網路管理頁面範例
 
+## Demo
+
+在此提供兩個簡單 demo ，如果組長還想看哪一個部份的話，我再把他弄出來。
+
+- [ 首頁 ](http://ntu-dorm.netlify.com/)
+- [ 使用者列表 ](http://ntu-dorm.netlify.com/users)
+
 完整提案請參考 [此連結](https://github.com/IthacaCow/NTU-Dorm-Administration-Registration-Page)
 
 ## 目標
