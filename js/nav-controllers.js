@@ -46,7 +46,7 @@ var model = {
 	{ name: 'IP, Mac對應表',
 	  type: 'toggle',
 	  children:[		      
-	      { name: '列表&新增', type: 'link',url: '/users' },
+	      { name: '列表&新增', type: 'link',url: '/#/users' },
 	      { name: '未使用IP列表', type: 'link',url: '#' },
 	      { name: '申請列表', type: 'link',url: '#' }		       
 	  ]
